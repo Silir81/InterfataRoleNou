@@ -3,23 +3,48 @@ import customtkinter as ctk
 from tkinter import ttk, filedialog
 import pandas as pd
 
+def move_window(event):
+    root.geometry(f'+{event.x_root}+{event.y_root}')
+
 # Initialize main window
 root = ctk.CTk()
 root.geometry('800x600')
-root.title("CustomTkinter Tabs")
+root.overrideredirect(True)  # Turn off the default title bar
+
+# Create a custom title bar
+title_bar = ctk.CTkFrame(root, height=80, fg_color='lightgrey')  # Corrected property name
+title_bar.pack(fill='x')
+title_bar.bind('<B1-Motion>', move_window)
+
+# Custom title label
+title_label = ctk.CTkLabel(title_bar, text="Smecherie by SRV", fg_color='orange', text_color='black', font=('Arial', 16))
+title_label.pack(side='left', padx=10)
+
+# Close button
+close_button = ctk.CTkButton(title_bar, text="X", command=root.destroy, fg_color='red', hover_color='dark red')
+close_button.pack(side='right')
 
 # Global variables for Excel data and file path
 df = None
 file_path = None
 
-# Function to switch between tabs
+# Define colors for active and inactive tabs
+active_tab_color = "Green"
+inactive_tab_color = "Gray"
+
+# Function to switch between tabs and highlight the active tab
 def switch_tab(tab):
+    global tab1_button, tab2_button
     tab1_frame.pack_forget()
     tab2_frame.pack_forget()
     if tab == 1:
         tab1_frame.pack(fill='both', expand=True)
+        tab1_button.configure(fg_color=active_tab_color)
+        tab2_button.configure(fg_color=inactive_tab_color)
     else:
         tab2_frame.pack(fill='both', expand=True)
+        tab1_button.configure(fg_color=inactive_tab_color)
+        tab2_button.configure(fg_color=active_tab_color)
 
 # Function to update the Treeview with data based on selected Tambur
 def on_dropdown_select(*args):
@@ -82,9 +107,9 @@ tab2_frame = ctk.CTkFrame(root)
 tabs_container = ctk.CTkFrame(root)
 tabs_container.pack(side='top', fill='x')
 
-# Create buttons for switching tabs
-tab1_button = ctk.CTkButton(tabs_container, text="Registru Role", command=lambda: switch_tab(1))
-tab2_button = ctk.CTkButton(tabs_container, text="Registru Rebut", command=lambda: switch_tab(2))
+# Create buttons for switching tabs with initial inactive appearance
+tab1_button = ctk.CTkButton(tabs_container, text="Registru Role", command=lambda: switch_tab(1), fg_color=inactive_tab_color)
+tab2_button = ctk.CTkButton(tabs_container, text="Registru Rebut", command=lambda: switch_tab(2), fg_color=inactive_tab_color)
 tab1_button.pack(side='left', fill='x', expand=True)
 tab2_button.pack(side='left', fill='x', expand=True)
 
