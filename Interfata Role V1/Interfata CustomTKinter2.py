@@ -3,9 +3,11 @@ import customtkinter as ctk
 from tkinter import ttk, filedialog
 import pandas as pd
 
+
 # Function to move the window (used for custom title bar dragging)
 def move_window(event):
     root.geometry(f'+{event.x_root}+{event.y_root}')
+
 
 # Initialize main window without default title bar
 root = ctk.CTk()
@@ -33,6 +35,7 @@ file_path = None
 active_tab_color = "Green"
 inactive_tab_color = "Gray"
 
+
 # Function to switch between tabs and update their appearance based on active state
 def switch_tab(tab):
     global tab1_button, tab2_button
@@ -47,6 +50,7 @@ def switch_tab(tab):
         tab1_button.configure(fg_color=inactive_tab_color)
         tab2_button.configure(fg_color=active_tab_color)
 
+
 # Function to update the Treeview based on selected 'Tambur' value from dropdown
 def on_dropdown_select(*args):
     global df
@@ -55,11 +59,13 @@ def on_dropdown_select(*args):
         filtered_df = df[(df['Tambur'] == selected_tambur) & (df['KG/Rola'] > 0)]
         update_treeview(filtered_df)
 
+
 # Function to populate the Treeview with data from the DataFrame
 def update_treeview(filtered_df):
     tree.delete(*tree.get_children())
     for index, row in filtered_df.iterrows():
         tree.insert("", tk.END, values=(row['Tambur'], row['KG/Rola'], row['Nr.InternRola']))
+
 
 # Function to open an Excel file and update dropdown with 'Tambur' values
 def open_excel_file():
@@ -87,6 +93,7 @@ def create_dropdown(values):
     dropdown.pack(fill='x', expand=True)
     dropdown_var.trace('w', lambda *args: on_dropdown_select())
 
+
 # Function to update a specific 'KG/Rola' value in the DataFrame and save to the Excel file
 def update_kg_rola():
     global df, file_path
@@ -99,6 +106,7 @@ def update_kg_rola():
         df.to_excel(file_path, index=False)
         print("Data saved to Excel.")
         new_kg_rola_entry.delete(0, tk.END)  # Clear the entry field
+
 
 # Create and configure tab frames
 tab1_frame = ctk.CTkFrame(root)
