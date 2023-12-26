@@ -8,8 +8,9 @@ root = ctk.CTk()
 root.geometry('800x600')
 root.title("CustomTkinter Tabs")
 
-# Global DataFrame for Excel data
+# Global variables for Excel data and file path
 df = None
+file_path = None
 
 # Function to switch between tabs
 def switch_tab(tab):
@@ -36,7 +37,7 @@ def update_treeview(filtered_df):
 
 # Function to open an Excel file and update dropdown
 def open_excel_file():
-    global df
+    global df, file_path
     file_path = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx;*.xls")])
     if file_path:
         try:
@@ -60,6 +61,19 @@ def create_dropdown(values):
     dropdown.pack(fill='x', expand=True)
     dropdown_var.trace('w', lambda *args: on_dropdown_select())
 
+# Function to update KG/Rola value in the selected row and save to Excel
+def update_kg_rola():
+    global df, file_path
+    new_kg_rola_value = new_kg_rola_entry.get()
+    selected_item = tree.selection()
+    if selected_item and file_path:
+        selected_row_id = tree.item(selected_item[0], 'values')[2]
+        df.loc[df['Nr.InternRola'] == selected_row_id, 'KG/Rola'] = float(new_kg_rola_value)
+        update_treeview(df[(df['Tambur'] == dropdown_var.get()) & (df['KG/Rola'] > 0)])
+        df.to_excel(file_path, index=False)
+        print("Data saved to Excel.")
+        new_kg_rola_entry.delete(0, tk.END)  # Clear the entry field
+
 # Create tab frames
 tab1_frame = ctk.CTkFrame(root)
 tab2_frame = ctk.CTkFrame(root)
@@ -74,19 +88,25 @@ tab2_button = ctk.CTkButton(tabs_container, text="Registru Rebut", command=lambd
 tab1_button.pack(side='left', fill='x', expand=True)
 tab2_button.pack(side='left', fill='x', expand=True)
 
-
 # Add Open Excel button to Tab 1
 open_excel_button = ctk.CTkButton(tab1_frame, text="Open Excel File", command=open_excel_file)
 open_excel_button.pack(pady=10)
-
 
 # Placeholder frame for dropdown in Tab 1
 dropdown_placeholder = ctk.CTkFrame(tab1_frame)
 dropdown_placeholder.pack(pady=10)
 
-
 # Create initial empty dropdown in Tab 1 with a placeholder value
 create_dropdown(["Select Tambur"])
+
+# Create entry for new KG/Rola value
+new_kg_rola_var = tk.StringVar()
+new_kg_rola_entry = ctk.CTkEntry(tab1_frame, textvariable=new_kg_rola_var, placeholder_text="New KG/Rola")
+new_kg_rola_entry.pack(pady=10)
+
+# Create Update button to update KG/Rola value
+update_button = ctk.CTkButton(tab1_frame, text="Update KG/Rola", command=update_kg_rola)
+update_button.pack(pady=10)
 
 # Create Treeview in Tab 1
 tree_columns = ("Tambur", "KG/Rola", "Nr.InternRola")
