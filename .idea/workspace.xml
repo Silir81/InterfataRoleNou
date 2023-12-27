@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2023/12/27 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,7 @@
     "Python.Interfata CustomTKinter.executor": "Run",
     "Python.Interfata CustomTKinter1.executor": "Run",
     "Python.Interfata CustomTKinter2.executor": "Run",
+    "Python.Interfata CustomTKinter3.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -143,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703621195639</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2023/12/27 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+      <option name="closed" value="true" />
+      <created>1703695013363</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703695013363</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +186,7 @@
     <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori" />
     <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra" />
     <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
+    <MESSAGE value="2023/12/27 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/12/27 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
   </component>
 </project>
