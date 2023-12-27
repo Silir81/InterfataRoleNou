@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Interfata Role V1.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/0/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/data_handling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/gui_setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfata Role V1/utility.py" afterDir="false" />
+    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata CustomTKinter2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +23,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Silir81&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="42bcb8ad-34be-46df-a2e0-8054e874cc5a" />
+        <option name="url" value="git@github.com:/Silir81/InterfataRoleNou.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2a4UKTeSHkhUvMNQrWewhNNsOe6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,13 +56,21 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.Interfata CustomTKinter.executor": "Run",
     "Python.Interfata CustomTKinter1.executor": "Run",
+    "Python.Interfata CustomTKinter2.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/PythonDemos/Interfata Role V1.0/Interfata Role V1",
+    "run.code.analysis.last.selected.profile": "aDefault"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PythonDemos\Interfata Role V1.0\Interfata Role V1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,9 +87,96 @@
       <option name="presentableId" value="Default" />
       <updated>1703577280627</updated>
     </task>
+    <task id="LOCAL-00001" summary="2023/12/25 - Interfata CustomTKinter1.py - V1.0 - Functional GUI si creare butoane">
+      <option name="closed" value="true" />
+      <created>1703590888285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703590888285</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si creare butoane, Afiseaza informatiile">
+      <option name="closed" value="true" />
+      <created>1703591822923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703591822923</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown">
+      <option name="closed" value="true" />
+      <created>1703607369916</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703607369916</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori">
+      <option name="closed" value="true" />
+      <created>1703616056056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703616056056</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra">
+      <option name="closed" value="true" />
+      <created>1703619923663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703619923663</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+      <option name="closed" value="true" />
+      <created>1703620881806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703620881806</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments">
+      <option name="closed" value="true" />
+      <created>1703621195639</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703621195639</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter1.py - V1.0 - Functional GUI si creare butoane" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si creare butoane, Afiseaza informatiile" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra" />
+    <MESSAGE value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023/12/25 - Interfata CustomTKinter2.py - V1.0 - Functional GUI si DropDown + Update Valori + Titlu fereastra + Comments" />
   </component>
 </project>

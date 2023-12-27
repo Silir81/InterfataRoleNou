@@ -24,8 +24,9 @@ title_label = ctk.CTkLabel(title_bar, text="Smecherie by SRV", fg_color='orange'
 title_label.pack(side='left', padx=10)
 
 # Close button on title bar to close the application
-close_button = ctk.CTkButton(title_bar, text="X", command=root.destroy, fg_color='red', hover_color='dark red')
-close_button.pack(side='right')
+close_button = ctk.CTkButton(title_bar, text="X", command=root.destroy, fg_color='red', hover_color='dark red', width=40, height=30, font=('Calibri', 12, 'bold'))
+close_button.pack(side='right', padx=10, pady=10)
+# close_button.pack(side='right')
 
 # Global variables for Excel data and file path
 df = None
@@ -52,10 +53,12 @@ def switch_tab(tab):
 
 
 # Function to update the Treeview based on selected 'Tambur' value from dropdown
+# noinspection PyUnresolvedReferences
 def on_dropdown_select(*args):
     global df
     selected_tambur = dropdown_var.get()
     if df is not None and selected_tambur:
+        # noinspection PyUnresolvedReferences
         filtered_df = df[(df['Tambur'] == selected_tambur) & (df['KG/Rola'] > 0)]
         update_treeview(filtered_df)
 
@@ -79,6 +82,7 @@ def open_excel_file():
         except Exception as e:
             print("Error opening file:", e)
 
+
 # Function to create and position a new dropdown in the placeholder frame
 def create_dropdown(values):
     global dropdown_var, dropdown
@@ -95,14 +99,18 @@ def create_dropdown(values):
 
 
 # Function to update a specific 'KG/Rola' value in the DataFrame and save to the Excel file
+# noinspection PyUnresolvedReferences
 def update_kg_rola():
     global df, file_path
     new_kg_rola_value = new_kg_rola_entry.get()
     selected_item = tree.selection()
     if selected_item and file_path:
         selected_row_id = tree.item(selected_item[0], 'values')[2]
+        # noinspection PyUnresolvedReferences
         df.loc[df['Nr.InternRola'] == selected_row_id, 'KG/Rola'] = float(new_kg_rola_value)
+        # noinspection PyUnresolvedReferences
         update_treeview(df[(df['Tambur'] == dropdown_var.get()) & (df['KG/Rola'] > 0)])
+        # noinspection PyUnresolvedReferences
         df.to_excel(file_path, index=False)
         print("Data saved to Excel.")
         new_kg_rola_entry.delete(0, tk.END)  # Clear the entry field
