@@ -20,11 +20,13 @@ title_bar.pack(fill='x')
 title_bar.bind('<B1-Motion>', move_window)
 
 # Custom title label with specified text, colors, and font
-title_label = ctk.CTkLabel(title_bar, text="Smecherie by SRV", fg_color='orange', text_color='black', font=('Arial', 16))
+title_label = ctk.CTkLabel(title_bar, text="Smecherie by SRV", fg_color='orange', text_color='black',
+                           font=('Arial', 16))
 title_label.pack(side='left', padx=10)
 
 # Close button on title bar to close the application
-close_button = ctk.CTkButton(title_bar, text="X", command=root.destroy, fg_color='red', hover_color='dark red', width=40, height=30, font=('Calibri', 12, 'bold'))
+close_button = ctk.CTkButton(title_bar, text="X", command=root.destroy, fg_color='red', hover_color='dark red',
+                             width=40, height=30, font=('Calibri', 12, 'bold'))
 close_button.pack(side='right', padx=10, pady=10)
 # close_button.pack(side='right')
 
@@ -53,12 +55,10 @@ def switch_tab(tab):
 
 
 # Function to update the Treeview based on selected 'Tambur' value from dropdown
-# noinspection PyUnresolvedReferences
 def on_dropdown_select(*args):
     global df
     selected_tambur = dropdown_var.get()
     if df is not None and selected_tambur:
-        # noinspection PyUnresolvedReferences
         filtered_df = df[(df['Tambur'] == selected_tambur) & (df['KG/Rola'] > 0)]
         update_treeview(filtered_df)
 
@@ -67,7 +67,12 @@ def on_dropdown_select(*args):
 def update_treeview(filtered_df):
     tree.delete(*tree.get_children())
     for index, row in filtered_df.iterrows():
-        tree.insert("", tk.END, values=(row['Tambur'], row['KG/Rola'], row['Nr.InternRola']))
+        # tree.insert("", tk.END, values=(row['Tambur'], row['KG/Rola'], row['Nr.InternRola'], row['Nr. Rulou']))
+        # Convert KG/Rola to integer
+        kg_rola_int = int(row['KG/Rola']) if pd.notnull(row['KG/Rola']) else None
+        # Insert data into the treeview
+        tree.insert("", tk.END, values=(row['Tambur'], kg_rola_int, row['Nr.InternRola'],
+                                        row.get('Nr. Rulou', '')))
 
 
 # Function to open an Excel file and update dropdown with 'Tambur' values
@@ -99,18 +104,14 @@ def create_dropdown(values):
 
 
 # Function to update a specific 'KG/Rola' value in the DataFrame and save to the Excel file
-# noinspection PyUnresolvedReferences
 def update_kg_rola():
     global df, file_path
     new_kg_rola_value = new_kg_rola_entry.get()
     selected_item = tree.selection()
     if selected_item and file_path:
         selected_row_id = tree.item(selected_item[0], 'values')[2]
-        # noinspection PyUnresolvedReferences
         df.loc[df['Nr.InternRola'] == selected_row_id, 'KG/Rola'] = float(new_kg_rola_value)
-        # noinspection PyUnresolvedReferences
         update_treeview(df[(df['Tambur'] == dropdown_var.get()) & (df['KG/Rola'] > 0)])
-        # noinspection PyUnresolvedReferences
         df.to_excel(file_path, index=False)
         print("Data saved to Excel.")
         new_kg_rola_entry.delete(0, tk.END)  # Clear the entry field
@@ -125,8 +126,10 @@ tabs_container = ctk.CTkFrame(root)
 tabs_container.pack(side='top', fill='x')
 
 # Create buttons for switching tabs with initial inactive appearance
-tab1_button = ctk.CTkButton(tabs_container, text="Registru Role", command=lambda: switch_tab(1), fg_color=inactive_tab_color)
-tab2_button = ctk.CTkButton(tabs_container, text="Registru Rebut", command=lambda: switch_tab(2), fg_color=inactive_tab_color)
+tab1_button = ctk.CTkButton(tabs_container, text="Registru Role", command=lambda: switch_tab(1),
+                            fg_color=inactive_tab_color)
+tab2_button = ctk.CTkButton(tabs_container, text="Registru Rebut", command=lambda: switch_tab(2),
+                            fg_color=inactive_tab_color)
 tab1_button.pack(side='left', fill='x', expand=True)
 tab2_button.pack(side='left', fill='x', expand=True)
 
@@ -150,18 +153,31 @@ new_kg_rola_entry.pack(pady=10)
 update_button = ctk.CTkButton(tab1_frame, text="Update KG/Rola", command=update_kg_rola)
 update_button.pack(pady=10)
 
+# Initialize the style object
+style = ttk.Style()
+# Change the background color of the Treeview and its fields
+style.configure("Treeview", backgroud="orange", filebackgroud="red", font=('Calibri', 14, 'bold', 'italic'))  # Change font and size for content
+style.configure("Treeview.Heading", font=('Calibri', 14, 'bold'))  # Change font and size for headings
+
 # Create Treeview in Tab 1 for displaying data
-tree_columns = ("Tambur", "KG/Rola", "Nr.InternRola")
+tree_columns = ("Tambur", "KG/Rola", "Nr.InternRola", "Nr. Rulou")
 tree = ttk.Treeview(tab1_frame, columns=tree_columns, show='headings')
+
+
+# Configure the tag for items
+tree.tag_configure('oddrow', background='orange')
+tree.tag_configure('evenrow', background='red')
+
 for col in tree_columns:
-    tree.heading(col, text=col)
+    tree.heading(col, text=col, anchor='center')  # Align text to 'center'
+    tree.column(col, anchor='center')  # Ensure the column cells are also aligned to the 'center'
 tree.pack(expand=True, fill='both', pady=20, padx=20)
 
 # Create input fields in Tab 2 for additional functionalities
 for i in range(1, 3):
     entry_var = tk.StringVar()
     entry = ctk.CTkEntry(tab2_frame, textvariable=entry_var, placeholder_text=f"Input {i}")
-    entry.pack(pady=10)
+    entry.pack(pady=30)
 
 # Initially display Tab 1 by default
 switch_tab(1)

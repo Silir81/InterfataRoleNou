@@ -52,8 +52,35 @@ def switch_tab(tab):
         tab2_button.configure(fg_color=active_tab_color)
 
 
+# Function to handle Grosime dropdown selection
+def on_grosime_select(*args):
+    global df
+    selected_grosime = grosime_dropdown_var.get()
+    if df is not None and selected_grosime != "Select Grosime":
+        # Filter df for the selected Grosime value
+        filtered_df = df[df['Grosime'] == selected_grosime]
+        # Get the unique Tambur values from the filtered DataFrame
+        tambur_values = filtered_df['Tambur'].dropna().unique().tolist()
+        # Update the Tambur dropdown
+        update_tambur_dropdown(tambur_values)
+    else:
+        # Reset Tambur dropdown if "Select Grosime" is chosen
+        reset_tambur_dropdown()
+
+
+# Function to update the Tambur dropdown values
+def update_tambur_dropdown(values):
+    global dropdown_var, dropdown
+    dropdown.set_values(values)  # Assuming there is a method set_values to update the dropdown values
+    dropdown_var.set('Select Tambur')  # Reset or set default value for the Tambur dropdown
+
+# Function to reset the Tambur dropdown values
+def reset_tambur_dropdown():
+    global dropdown_var, dropdown
+    dropdown.set_values(['Select Tambur'])  # Reset the dropdown to default state
+    dropdown_var.set('Select Tambur')  # Reset or set default value for the Tambur dropdown
+
 # Function to update the Treeview based on selected 'Tambur' value from dropdown
-# noinspection PyUnresolvedReferences
 def on_dropdown_select(*args):
     global df
     selected_tambur = dropdown_var.get()
@@ -133,6 +160,13 @@ def update_kg_rola():
         df.to_excel(file_path, index=False)
         print("Data saved to Excel.")
         new_kg_rola_entry.delete(0, tk.END)  # Clear the entry field
+
+# Assuming you have a grosime_dropdown similar to dropdown and grosime_dropdown_var similar to dropdown_var
+grosime_dropdown_var.trace('w', on_grosime_select)
+
+
+# Bind the Grosime dropdown selection to the handler function
+grosime_dropdown.bind("<<ComboboxSelected>>", on_grosime_select)
 
 
 # Create and configure tab frames
