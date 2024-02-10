@@ -15,7 +15,7 @@ root.geometry('800x600')
 root.overrideredirect(True)  # Turn off the default title bar
 
 # Create a custom title bar with a specified height and color
-title_bar = ctk.CTkFrame(root, height=80, fg_color='lightgrey')  # Corrected property name
+title_bar = ctk.CTkFrame(root, height=80, fg_color='grey')  # Corrected property name
 title_bar.pack(fill='x')
 title_bar.bind('<B1-Motion>', move_window)
 
