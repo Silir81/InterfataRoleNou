@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['Interfata', 'Customtkinter4.py'],
+    ['interfata', 'Role', 'V1\\Interfata_CustomTKinter4_MF1600.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -18,20 +18,26 @@ pyz = PYZ(a.pure)
 exe = EXE(
     pyz,
     a.scripts,
-    a.binaries,
-    a.datas,
     [],
-    name='Interfata',
+    exclude_binaries=True,
+    name='interfata',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    upx_exclude=[],
-    runtime_tmpdir=None,
     console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+)
+coll = COLLECT(
+    exe,
+    a.binaries,
+    a.datas,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    name='interfata',
 )

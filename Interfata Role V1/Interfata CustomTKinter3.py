@@ -80,7 +80,7 @@ def reset_tambur_dropdown():
     dropdown.set_values(['Select Tambur'])  # Reset the dropdown to default state
     dropdown_var.set('Select Tambur')  # Reset or set default value for the Tambur dropdown
 
-# Function to update the Treeview based on selected 'Tambur' value from dropdown
+# Function to update the Treeview based on selected 'Tambur' value from dropdown m
 def on_dropdown_select(*args):
     global df
     selected_tambur = dropdown_var.get()

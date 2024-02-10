@@ -1,0 +1,72 @@
+('C:\\pythondemos\\interfata role v1.0\\interfata role '
+ 'v1\\build\\Interfata_CustomTKinter4_MF1600\\Interfata_CustomTKinter4_MF1600.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\pythondemos\\interfata role v1.0\\interfata role '
+   'v1\\build\\Interfata_CustomTKinter4_MF1600\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\PythonDemos\\Interfata Role '
+   'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('Interfata_CustomTKinter4_MF1600',
+   'C:\\PythonDemos\\Interfata Role V1.0\\Interfata Role '
+   'V1\\Interfata_CustomTKinter4_MF1600.py',
+   'PYSOURCE')],
+ 'python312.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
