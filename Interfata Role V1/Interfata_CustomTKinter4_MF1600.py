@@ -96,6 +96,20 @@ def open_excel_file():
         except Exception as e:
             msgbox.showerror("Eroare", f"Eroare necunoscuta: {e}")
 
+def refresh_excel_file():
+    global df, file_path
+    if file_path:
+        try:
+            df = pd.read_excel(file_path)
+            # Update UI components here based on new df
+            print("Excel file refreshed")
+        except Exception as e:
+            msgbox.showerror("Error", f"Failed to refresh Excel file: {e}")
+    # Schedule this function to run again after 60000 milliseconds (1 minute)
+    root.after(60000, refresh_excel_file)
+
+
+
 
 # Function to create and position a new dropdown in the placeholder frame
 def create_dropdown(values):
@@ -191,5 +205,9 @@ for i in range(1, 3):
 # Initially display Tab 1 by default
 switch_tab(1)
 
+# Start the Excel data refresh loop
+refresh_excel_file()
+
 # Start the GUI loop
 root.mainloop()
+

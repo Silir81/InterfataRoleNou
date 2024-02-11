@@ -89,7 +89,7 @@
  [],
  False,
  False,
- 1707586400,
+ 1707591781,
  [('run.exe',
    'C:\\PythonDemos\\Interfata Role '
    'V1.0\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
