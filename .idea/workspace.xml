@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2024/02/10 - Interfata CustomTKinter3.py - V4.0 - MF1600 - Functional GUI si DropDown Grosime?? - dar nu mai mult. Interfata CustomTKinter2 cu cateva imbunatatiri">
+      <change beforePath="$PROJECT_DIR$/.idea/Interfata Role V1.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interfata Role V1.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/Interfata_CustomTKinter4_MF1600.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/Interfata_CustomTKinter4_MF1600.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/COLLECT-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/COLLECT-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/warn-Interfata_CustomTKinter4_MF1600.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/warn-Interfata_CustomTKinter4_MF1600.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/xref-Interfata_CustomTKinter4_MF1600.html" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/build/Interfata_CustomTKinter4_MF1600/xref-Interfata_CustomTKinter4_MF1600.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfata Role V1/dist/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Interfata Role V1/dist/Interfata_CustomTKinter4_MF1600/Interfata_CustomTKinter4_MF1600.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,26 +61,30 @@
     "Python.Interfata CustomTKinter3.executor": "Run",
     "Python.Interfata CustomTKinter4.executor": "Run",
     "Python.Interfata_CustomTKinter4.executor": "Run",
+    "Python.Interfata_CustomTKinter4_MF1600 V1.0 - Initial.executor": "Run",
+    "Python.Interfata_CustomTKinter4_MF1600 V1.1 - Initial.executor": "Run",
     "Python.Interfata_CustomTKinter4_MF1600.executor": "Run",
+    "Python.Registru Role V1.1.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/PythonDemos/Interfata Role V1.0/Interfata Role V1",
+    "last_opened_file_path": "C:/PyCharm Community Edition 2023.2.2/Interfata_Role_V1.0/Interfata Role V1",
     "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PyCharm Community Edition 2023.2.2\Interfata_Role_V1.0\Interfata Role V1" />
       <recent name="C:\PythonDemos\Interfata Role V1.0\Interfata Role V1" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+        <option value="bundled-python-sdk-7a29c1521ef0-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.298" />
       </set>
     </attachedChunks>
   </component>
