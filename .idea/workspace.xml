@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2024/02/10 - Interfata CustomTKinter3.py - V4.0 - MF1600 - Functional GUI si DropDown Grosime?? - dar nu mai mult. Interfata CustomTKinter2 cu cateva imbunatatiri">
+    <list default="true" id="f5e054da-f693-4c25-a70f-aec4cae1afad" name="Changes" comment="2024/03/31 - Registru Role V1.1 - Functional GUI">
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/Registru Role V1.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/Registru Role V1.1.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/Analysis-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/EXE-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/PKG-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/PYZ-00.pyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/PYZ-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/Registru Role V1.1.pkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/Tree-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/Tree-01.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/Tree-02.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/warn-Registru Role V1.1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/build/Registru Role V1.1/xref-Registru Role V1.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interfata Role V1/dist/Registru Role V1.1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Interfata Role V1.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interfata Role V1.0.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -193,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707586797401</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2024/03/31 - Registru Role V1.1 - Functional GUI">
+      <option name="closed" value="true" />
+      <created>1711882321485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711882321485</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +242,7 @@
     <MESSAGE value="2023/12/27 - Interfata CustomTKinter3.py - V1.0 - Functional GUI si DropDown Grosime" />
     <MESSAGE value="2023/12/27 - Interfata CustomTKinter3.py - V1.0 - Functional GUI si DropDown Grosime?? - dar nu mai mult. Interfata CustomTKinter2 cu cateva imbunatatiri" />
     <MESSAGE value="2024/02/10 - Interfata CustomTKinter3.py - V4.0 - MF1600 - Functional GUI si DropDown Grosime?? - dar nu mai mult. Interfata CustomTKinter2 cu cateva imbunatatiri" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024/02/10 - Interfata CustomTKinter3.py - V4.0 - MF1600 - Functional GUI si DropDown Grosime?? - dar nu mai mult. Interfata CustomTKinter2 cu cateva imbunatatiri" />
+    <MESSAGE value="2024/03/31 - Registru Role V1.1 - Functional GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024/03/31 - Registru Role V1.1 - Functional GUI" />
   </component>
 </project>
